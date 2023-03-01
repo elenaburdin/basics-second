@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Vatiables</title>
+    <style>
+        :root {
+            --primary-color: #bc6c25;
+            --secondary-color: #dda15e;
+            --background-color: #fefae0;
+            --text-color: #fff;
+            --max-width: 1100px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            background: var(--background-color);
+        }
+
+        header {
+            background: var(--primary-color);
+            color: var(--text-color);
+            text-align: center;
+            border-bottom: var(--secondary-color) 5px solid;
+        }
+
+        .container {
+            display: flex;
+            margin: auto;
+            text-align: center;
+            max-width: var(--max-width);
+        }
+
+        .box {
+            background: var(--secondary-color);
+            color: var(--text-color);
+            padding: 1rem;
+            margin: 1rem;
+            border-bottom: var(--primary-color) 5px solid;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <div class="box box-1">
+            <h3>Box One</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quidem veritatis illum sapiente deleniti
+                qui.</p>
+        </div>
+        <div class="box box-2">
+            <h3>Box Two</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quidem veritatis illum sapiente deleniti
+                qui.</p>
+        </div>
+        <div class="box box-3">
+            <h3>Box Three</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima quidem veritatis illum sapiente deleniti
+                qui.</p>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

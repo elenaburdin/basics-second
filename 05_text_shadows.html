@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Shadows</title>
+    <style>
+        h1 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 4rem;
+            color: #333;
+            text-align: center;
+            height: 15vh;
+        }
+
+        /*  h-shadow | v-shadow | color*/
+        h1.a {
+            text-shadow: 0.3rem 0.3rem #fb5607;
+        }
+
+        /*  h-shadow | v-shadow | blur | color*/
+        h1.b {
+            text-shadow: 0.3rem 0.3rem 0.3rem #fb5607;
+        }
+
+        /* White text */
+        h1.c {
+            color: #fff;
+            text-shadow: 0.2rem 0.2rem 0.9rem #fb5607;
+        }
+
+        /* Negative */
+        h1.d {
+            text-shadow: -0.3rem -0.3rem #fb5607;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="a">Hello World</h1>
+    <h1 class="b">Hello World</h1>
+    <h1 class="c">Hello World</h1>
+    <h1 class="d">Hello World</h1>
+
+
+</body>
+
+</html>
