@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth Child</title>
+    <style>
+        p {
+            padding: 0.35rem;
+            margin: 0.25rem;
+            text-align: center;
+        }
+
+        p:first-child {
+            background: #ddd;
+        }
+
+        p:nth-child(5) {
+            background: #d4a373 !important;
+        }
+
+        p:nth-child(3n) {
+            background: #ccd5ae;
+        }
+
+        p:nth-child(2n+6) {
+            background: #e9edc9;
+        }
+
+        p:last-child {
+            background: #ddd;
+        }
+
+        p:nth-child(odd) {
+            background: #bc6c25;
+        }
+
+        p:nth-child(even) {
+            background: #dda15e;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+</body>
+
+</html>

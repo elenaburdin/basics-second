@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before & After</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.4;
+            background: #001219;
+            color: #fff;
+        }
+
+        header {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            background: url('https://images.unsplash.com/photo-1525935944571-4e99237764c9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80') no-repeat center center/cover;
+            opacity: 0.4;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        header h1 {
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        section,
+        form {
+            padding: 10px;
+        }
+
+        section p {
+            padding-bottom: 10px;
+        }
+
+        input[type='email'] {
+            width: 30%;
+            margin: 0.25rem;
+            padding: 0.25rem;
+        }
+
+        input[type='submit'] {
+            width: 15%;
+            padding: 0.25rem;
+            background: #84a59d;
+            cursor: pointer;
+        }
+
+
+        label::after {
+            content: '*';
+            margin-left: 3px;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam, vero!</p>
+    </header>
+
+    <section>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae at nobis assumenda sequi ea
+            eos debitis nihil impedit aperiam, vel deserunt eum! Aperiam, quasi?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum voluptatibus, perspiciatis
+            aspernatur atque non.</p>
+    </section>
+
+    <form action="#">
+        <div>
+            <label for="email">Email</label>
+            <input type="email" placeholder="email">
+            <input type="submit" value="Subscribe">
+        </div>
+
+
+    </form>
+
+</body>
+
+</html>

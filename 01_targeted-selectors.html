@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targetered Selectors</title>
+    <style>
+        /* Direct child */
+        div>p {
+            background: #1d3557;
+            color: #fff;
+            padding: 5px 5px;
+        }
+
+        /* Direct after  */
+        div+p {
+            background: #457b9d;
+            color: #fff;
+            padding: 5px 5px;
+        }
+
+        /* By attribute */
+        a[target='_blank'] {
+            background: #a8dadc;
+            padding: 5px 10px;
+        }
+
+        a[target='_self'] {
+            background: #457b9d;
+            color: #f1faee;
+            padding: 5px 10px;
+            text-decoration: none;
+        }
+
+        input[type='text'],
+        input[type='email'] {
+            width: 50%;
+            margin: 5px;
+        }
+
+        input[type='submit'] {
+            width: 20%;
+            background: #e63946;
+            border: #457b9d 5px solid;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, quae!</p>
+
+        <ul>
+            <li>Items 1</li>
+            <li>
+                <p>Items 2</p>
+            </li>
+            <li>Items 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, porro.</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, perspiciatis!</p>
+
+
+    <a href="#">Link One</a> <a href="#" target="_self">Link Two</a> <a href="http://google.com"
+        target="_blank">Google</a>
+
+    <br><br>
+    <form action="#">
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
